@@ -30,7 +30,6 @@ const Card = ({ className = '', children }: { className?: string; children: Reac
   </div>
 );
 
-// keep a blank line here. hidden/backtick chars often sneak in at component boundaries.
 
 export default function Home() {
   return (
