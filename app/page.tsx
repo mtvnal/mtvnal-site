@@ -33,7 +33,7 @@ export default function Home() {
             <a href="#join" className="hover:opacity-70">Join</a>
           </nav>
           <div className="flex items-center gap-3">
-            <a aria-label="Instagram" href="#" className="p-2 rounded-xl border border-gray-200 hover:bg-gray-50"><Instagram size={16} /></a>
+            <a aria-label="Instagram" href="https://www.instagram.com/mtvnalstudio/" className="p-2 rounded-xl border border-gray-200 hover:bg-gray-50"><Instagram size={16} /></a>
             <a aria-label="YouTube" href="#" className="p-2 rounded-xl border border-gray-200 hover:bg-gray-50"><Youtube size={16} /></a>
             <a aria-label="LinkedIn" href="#" className="p-2 rounded-xl border border-gray-200 hover:bg-gray-50"><Linkedin size={16} /></a>
             <a aria-label="Twitter" href="#" className="p-2 rounded-xl border border-gray-200 hover:bg-gray-50"><Twitter size={16} /></a>
