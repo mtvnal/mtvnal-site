@@ -37,7 +37,7 @@ export default function Home() {
             <a aria-label="YouTube" href="#" className="p-2 rounded-xl border border-gray-200 hover:bg-gray-50"><Youtube size={16} /></a>
             <a aria-label="LinkedIn" href="#" className="p-2 rounded-xl border border-gray-200 hover:bg-gray-50"><Linkedin size={16} /></a>
             <a aria-label="Twitter" href="#" className="p-2 rounded-xl border border-gray-200 hover:bg-gray-50"><Twitter size={16} /></a>
-            <Button className="bg-black text-white">Get the Planner</Button>
+            <Button className="bg-black text-white">Coming Soon!</Button>
           </div>
         </div>
       </header>
@@ -193,7 +193,7 @@ export default function Home() {
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Ready to start</h2>
           <p className="mt-2 text-gray-600">Give yourself thirty days. We will guide the rest.</p>
           <div className="mt-6 inline-flex gap-3">
-            <Button className="bg-black text-white inline-flex items-center gap-2">Get the Planner <ArrowRight size={16}/></Button>
+            <Button className="bg-black text-white inline-flex items-center gap-2">Coming Soon! <ArrowRight size={16}/></Button>
             <Button className="bg-white border border-gray-200">See all tools</Button>
           </div>
         </div>
