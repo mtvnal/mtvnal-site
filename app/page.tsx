@@ -58,7 +58,7 @@ export default function Home() {
               <Button className="bg-white border border-gray-200">Explore products</Button>
             </div>
             <p className="mt-4 text-xs text-gray-500">
-              No fluff. No toxic hustle. Just aligned action.
+              Aligned action. Daily momentum. Lasting change.
             </p>
           </motion.div>
 
