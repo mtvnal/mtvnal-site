@@ -15,7 +15,6 @@ const Button = ({ className = '', children, ...props }: any) => (
 const Card = ({ className = '', children }: any) => (
   <div className={`rounded-2xl p-6 shadow-sm border border-gray-100 bg-white/70 backdrop-blur ${className}`}>{children}</div>
 );
-
 export default function Home() {
   return (
     <div className="min-h-screen w-full bg-gradient-to-b from-white via-[#FAFAFF] to-white text-gray-900">
