@@ -55,7 +55,7 @@ export default function Home() {
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button className="bg-black text-white inline-flex items-center gap-2">Start free <ArrowRight size={16}/></Button>
-              <Button className="bg-white border border-gray-200">Coming soon</Button>
+              <Button className="bg-white border border-gray-200">Coming soon!</Button>
             </div>
             <p className="mt-4 text-xs text-gray-500">
               Aligned action. Daily momentum. Lasting change.
