@@ -181,7 +181,7 @@ export default function Home() {
             { quote: Discipline is the bridge between goals and accomplishment., name: "Jim Rohn" },
           ].map((t, i) => (
             <Card key={i}>
-              <p className="text-sm">“{t.quote}”</p>
+              <p className="text-sm">{t.quote}</p>
               <div className="mt-3 text-xs text-gray-500">{t.name}</div>
             </Card>
           ))}
