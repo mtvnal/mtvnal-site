@@ -1,9 +1,21 @@
 'use client';
+
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, Heart, Shield, Target, Instagram, Youtube, Linkedin, Twitter } from 'lucide-react';
+import {
+  ArrowRight,
+  Sparkles,
+  Heart,
+  Shield,
+  Target,
+  Instagram,
+  Youtube,
+  Linkedin,
+  Twitter,
+} from 'lucide-react';
 
-const Button = ({ className = '', children, ...props }: any) => (
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & { className?: string };
+const Button = ({ className = '', children, ...props }: ButtonProps) => (
   <button
     className={`px-5 py-3 rounded-2xl shadow-sm text-sm font-semibold transition hover:shadow-md active:scale-[0.99] ${className}`}
     {...props}
@@ -12,10 +24,16 @@ const Button = ({ className = '', children, ...props }: any) => (
   </button>
 );
 
-const Card = ({ className = '', children }: any) => (
-  <div className={`rounded-2xl p-6 shadow-sm border border-gray-100 bg-white/70 backdrop-blur ${className}`}>{children}</div>
+const Card = ({ className = '', children }: { className?: string; children: React.ReactNode }) => (
+  <div className={`rounded-2xl p-6 shadow-sm border border-gray-100 bg-white/70 backdrop-blur ${className}`}>
+    {children}
+  </div>
 );
-export default function Home() return (
+
+// keep a blank line here. hidden/backtick chars often sneak in at component boundaries.
+
+export default function Home() {
+  return (
     <div className="min-h-screen w-full bg-gradient-to-b from-white via-[#FAFAFF] to-white text-gray-900">
       {/* Navbar */}
       <header className="sticky top-0 z-40 bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-gray-100">
@@ -44,7 +62,9 @@ export default function Home() return (
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 pt-16 pb-12 grid md:grid-cols-2 items-center gap-10">
           <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1 rounded-xl border border-gray-200 mb-4"><Sparkles size={14}/> Forward minded. Impact driven.</p>
+            <p className="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1 rounded-xl border border-gray-200 mb-4">
+              <Sparkles size={14} /> Forward minded. Impact driven.
+            </p>
             <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
               Build a life you can stand behind
             </h1>
@@ -52,7 +72,7 @@ export default function Home() return (
               MTVNAL is a platform for ambition and consistency. Here, we build tools that transform ambition into consistent action, create content that inspires focus and resilience, and design frameworks that turn progress into results. From affirmations that shift mindset to tools that build consistency, MTVNAL exists to move you closer to the life you envision.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <Button className="bg-black text-white inline-flex items-center gap-2">Start free <ArrowRight size={16}/></Button>
+              <Button className="bg-black text-white inline-flex items-center gap-2">Start free <ArrowRight size={16} /></Button>
               <Button className="bg-white border border-gray-200">Coming soon</Button>
             </div>
             <p className="mt-4 text-xs text-gray-500">
@@ -121,19 +141,19 @@ export default function Home() return (
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="bg-white shadow-md rounded-xl">
               <div className="text-sm text-black">Digital</div>
-              <h3 className="mt-1 text-lg font-semibold">30 day Growth Planner</h3>
+              <h3 className="mt-1 text-lg font-semibold text-black">30 day Growth Planner</h3>
               <p className="mt-1 text-sm text-black">A focused system for two quick sessions a day. Track habits, energy, and wins.</p>
               <Button className="mt-4 bg-black text-white">Preview</Button>
             </Card>
             <Card className="bg-white shadow-md rounded-xl">
               <div className="text-sm text-black">Guided</div>
-              <h3 className="mt-1 text-lg font-semibold">Evening Reset Audio</h3>
+              <h3 className="mt-1 text-lg font-semibold text-black">Evening Reset Audio</h3>
               <p className="mt-1 text-sm text-black">A five minute wind down to clear the day and set calm intention for tomorrow.</p>
               <Button className="mt-4 bg-black text-white">Listen</Button>
             </Card>
             <Card className="bg-white shadow-md rounded-xl">
               <div className="text-sm text-gray-300">Community</div>
-              <h3 className="mt-1 text-lg font-semibold">MTVNAL Collective</h3>
+              <h3 className="mt-1 text-lg font-semibold text-black">MTVNAL Collective</h3>
               <p className="mt-1 text-sm text-black">A friendly space to share micro wins and keep each other accountable.</p>
               <Button className="mt-4 bg-black text-white">Join waitlist</Button>
             </Card>
@@ -146,8 +166,9 @@ export default function Home() return (
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">About MTVNAL</h2>
-            <p className="mt-4 text-gray-600">MTVNAL exists for people who want to rise higher with clarity, focus, and tools that truly work. It’s built on the belief that ambition should feel empowering, not overwhelming, and that growth is strongest when it’s done with purpose.
-</p>
+            <p className="mt-4 text-gray-600">
+              MTVNAL exists for people who want to rise higher with clarity, focus, and tools that truly work. It is built on the belief that ambition should feel empowering, not overwhelming, and that growth is strongest when it is done with purpose.
+            </p>
             <ul className="mt-6 space-y-3 text-sm text-gray-700">
               <li className="flex items-start gap-2"><span className="mt-1">•</span> Clear copy that speaks to real goals</li>
               <li className="flex items-start gap-2"><span className="mt-1">•</span> Clean design that feels calm and premium</li>
@@ -157,8 +178,18 @@ export default function Home() return (
           <Card>
             <h3 className="font-semibold">Newsletter</h3>
             <p className="mt-1 text-sm text-gray-600">Daily quotes, affirmations, and more to help you become the best you.</p>
-            <form className="mt-4 flex gap-2" onSubmit={(e)=>{e.preventDefault(); alert('Connect this form to Beehiiv/ConvertKit.')}}>
-              <input type="email" placeholder="you@example.com" className="w-full rounded-xl border border-gray-200 px-4 py-3 outline-none focus:ring-2 focus:ring-gray-200" />
+            <form
+              className="mt-4 flex gap-2"
+              onSubmit={(e) => {
+                e.preventDefault();
+                alert('Connect this form to Beehiiv/ConvertKit.');
+              }}
+            >
+              <input
+                type="email"
+                placeholder="you@example.com"
+                className="w-full rounded-xl border border-gray-200 px-4 py-3 outline-none focus:ring-2 focus:ring-gray-200"
+              />
               <Button className="bg-black text-white">Subscribe</Button>
             </form>
             <p className="mt-2 text-xs text-gray-500">By subscribing, you agree to our terms and privacy policy.</p>
@@ -167,24 +198,24 @@ export default function Home() return (
       </section>
 
       {/* Quotes */}
-<section className="mx-auto max-w-6xl px-4 sm:px-6 pb-16">
-  <div className="mb-10">
-    <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Quotes</h2>
-    <p className="mt-2 text-gray-600">Timeless words that fuel clarity, focus, and daily momentum.</p>
-  </div>
-  <div className="grid md:grid-cols-3 gap-6">
-    {[
-      { quote: "The journey of a thousand miles begins with a single step.", name: "Lao Tzu" },
-      { quote: "Knowing yourself is the beginning of all wisdom.", name: "Aristotle" },
-      { quote: "Discipline is the bridge between goals and accomplishment.", name: "Jim Rohn" },
-    ].map((t, i) => (
-      <Card key={i}>
-        <p className="text-sm">{t.quote}</p>  {/* <-- no extra quotes here */}
-        <div className="mt-3 text-xs text-gray-500">{t.name}</div>
-      </Card>
-    ))}
-  </div>
-</section>
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 pb-16">
+        <div className="mb-10">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Quotes</h2>
+          <p className="mt-2 text-gray-600">Timeless words that fuel clarity, focus, and daily momentum.</p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6">
+          {[
+            { quote: 'The journey of a thousand miles begins with a single step.', name: 'Lao Tzu' },
+            { quote: 'Knowing yourself is the beginning of all wisdom.', name: 'Aristotle' },
+            { quote: 'Discipline is the bridge between goals and accomplishment.', name: 'Jim Rohn' },
+          ].map((t, i) => (
+            <Card key={i}>
+              <p className="text-sm">{t.quote}</p>
+              <div className="mt-3 text-xs text-gray-500">{t.name}</div>
+            </Card>
+          ))}
+        </div>
+      </section>
 
       {/* CTA */}
       <section id="join" className="bg-gray-50 border-t border-gray-100">
@@ -192,7 +223,9 @@ export default function Home() return (
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Ready to start?</h2>
           <p className="mt-2 text-gray-600">Give yourself thirty days. We will guide the rest.</p>
           <div className="mt-6 inline-flex gap-3">
-            <Button className="bg-black text-white inline-flex items-center gap-2">Coming Soon <ArrowRight size={16}/></Button>
+            <Button className="bg-black text-white inline-flex items-center gap-2">
+              Coming Soon <ArrowRight size={16} />
+            </Button>
             <Button className="bg-white border border-gray-200">See all tools</Button>
           </div>
         </div>
@@ -227,8 +260,18 @@ export default function Home() return (
           <div>
             <div className="font-semibold">Stay in touch</div>
             <p className="mt-3 text-gray-600">Get one thoughtful email each week.</p>
-            <form className="mt-3 flex gap-2" onSubmit={(e)=>{e.preventDefault(); alert('Connect this form to Beehiiv/ConvertKit.')}}>
-              <input type="email" placeholder="you@example.com" className="w-full rounded-xl border border-gray-200 px-4 py-3 outline-none focus:ring-2 focus:ring-gray-200" />
+            <form
+              className="mt-3 flex gap-2"
+              onSubmit={(e) => {
+                e.preventDefault();
+                alert('Connect this form to Beehiiv/ConvertKit.');
+              }}
+            >
+              <input
+                type="email"
+                placeholder="you@example.com"
+                className="w-full rounded-xl border border-gray-200 px-4 py-3 outline-none focus:ring-2 focus:ring-gray-200"
+              />
               <Button className="bg-black text-white">Join</Button>
             </form>
           </div>
