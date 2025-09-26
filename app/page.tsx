@@ -48,7 +48,7 @@ export default function Home() {
           <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1 rounded-xl border border-gray-200 mb-4"><Sparkles size={14}/> Forward minded. Impact driven.</p>
             <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight">
-              Build the life you can stand behind
+              Build a life you can stand behind
             </h1>
             <p className="mt-4 text-lg text-gray-600 max-w-prose">
               MTVNAL is a platform for ambition and consistency. Here, we build tools that transform ambition into consistent action, create content that inspires focus and resilience, and design frameworks that turn progress into results. From affirmations that shift mindset to tools that build consistency, MTVNAL exists to move you closer to the life you envision.
@@ -147,8 +147,9 @@ export default function Home() {
       <section id="about" className="mx-auto max-w-6xl px-4 sm:px-6 py-16">
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Why MTVNAL</h2>
-            <p className="mt-4 text-gray-600">The world does not need more noise. It needs honest guidance and tools that work. MTVNAL stands for motivated, thoughtful, and values aligned life. It is a promise that your growth will never come at the cost of your integrity.</p>
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">About MTVNAL</h2>
+            <p className="mt-4 text-gray-600">MTVNAL exists for people who want to rise higher with clarity, focus, and tools that truly work. It’s built on the belief that ambition should feel empowering, not overwhelming, and that growth is strongest when it’s done with purpose.
+</p>
             <ul className="mt-6 space-y-3 text-sm text-gray-700">
               <li className="flex items-start gap-2"><span className="mt-1">•</span> Clear copy that speaks to real goals</li>
               <li className="flex items-start gap-2"><span className="mt-1">•</span> Clean design that feels calm and premium</li>
