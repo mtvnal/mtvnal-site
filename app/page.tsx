@@ -51,7 +51,7 @@ export default function Home() {
               Build the life you can stand behind
             </h1>
             <p className="mt-4 text-lg text-gray-600 max-w-prose">
-              MTVNAL is a platform for ambition and consistency. We build tools that transform ambition into consistent action, create content that inspires focus and resilience, and design frameworks that turn progress into results. From affirmations that shift mindset to tools that build consistency, MTVNAL exists to move you closer to the life you envision.
+              MTVNAL is a platform for ambition and consistency. Here, we build tools that transform ambition into consistent action, create content that inspires focus and resilience, and design frameworks that turn progress into results. From affirmations that shift mindset to tools that build consistency, MTVNAL exists to move you closer to the life you envision.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button className="bg-black text-white inline-flex items-center gap-2">Start free <ArrowRight size={16}/></Button>
