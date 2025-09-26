@@ -87,8 +87,8 @@ export default function Home() {
             <div className="flex items-start gap-3">
               <Shield className="mt-1" size={20} />
               <div>
-                <h3 className="font-semibold">Integrity first</h3>
-                <p className="mt-1 text-sm text-gray-600">Honest methods. Clear promises. You will never be sold shortcuts or fantasy results.</p>
+                <h3 className="font-semibold">Made to uplift</h3>
+                <p className="mt-1 text-sm text-gray-600">Put your vision in motion right away.</p>
               </div>
             </div>
           </Card>
@@ -97,7 +97,7 @@ export default function Home() {
               <Target className="mt-1" size={20} />
               <div>
                 <h3 className="font-semibold">Daily momentum</h3>
-                <p className="mt-1 text-sm text-gray-600">Micro plans that add up. Two short sessions a day so progress fits your life.</p>
+                <p className="mt-1 text-sm text-gray-600">Micro plans that add up.</p>
               </div>
             </div>
           </Card>
@@ -106,7 +106,7 @@ export default function Home() {
               <Heart className="mt-1" size={20} />
               <div>
                 <h3 className="font-semibold">Compassion driven</h3>
-                <p className="mt-1 text-sm text-gray-600">Win with grace. Growth that uplifts you and the people around you.</p>
+                <p className="mt-1 text-sm text-gray-600">Win by growing your compassion. Growth that uplifts you and the people around you.</p>
               </div>
             </div>
           </Card>
