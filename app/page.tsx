@@ -167,7 +167,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Proof */}
+      {/* Quotes */}
       <section className="mx-auto max-w-6xl px-4 sm:px-6 pb-16">
         <div className="mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">What people say</h2>
