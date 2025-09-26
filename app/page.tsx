@@ -169,24 +169,24 @@ export default function Home() {
       </section>
 
       {/* Quotes */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 pb-16">
-        <div className="mb-10">
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Quotes</h2>
-          <p className="mt-2 text-gray-600">Timeless words that fuel clarity, focus, and daily momentum.</p>
-        </div>
-        <div className="grid md:grid-cols-3 gap-6">
-          {[
-            { quote: The journey of a thousand miles begins with a single step., name: "Lao Tzu" },
-            { quote: Knowing yourself is the beginning of all wisdom., name: "Aristotle" },
-            { quote: Discipline is the bridge between goals and accomplishment., name: "Jim Rohn" },
-          ].map((t, i) => (
-            <Card key={i}>
-              <p className="text-sm">{t.quote}</p>
-              <div className="mt-3 text-xs text-gray-500">{t.name}</div>
-            </Card>
-          ))}
-        </div>
-      </section>
+<section className="mx-auto max-w-6xl px-4 sm:px-6 pb-16">
+  <div className="mb-10">
+    <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Quotes</h2>
+    <p className="mt-2 text-gray-600">Timeless words that fuel clarity, focus, and daily momentum.</p>
+  </div>
+  <div className="grid md:grid-cols-3 gap-6">
+    {[
+      { quote: "The journey of a thousand miles begins with a single step.", name: "Lao Tzu" },
+      { quote: "Knowing yourself is the beginning of all wisdom.", name: "Aristotle" },
+      { quote: "Discipline is the bridge between goals and accomplishment.", name: "Jim Rohn" },
+    ].map((t, i) => (
+      <Card key={i}>
+        <p className="text-sm">{t.quote}</p>  {/* <-- no extra quotes here */}
+        <div className="mt-3 text-xs text-gray-500">{t.name}</div>
+      </Card>
+    ))}
+  </div>
+</section>
 
       {/* CTA */}
       <section id="join" className="bg-gray-50 border-t border-gray-100">
