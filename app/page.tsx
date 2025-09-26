@@ -171,8 +171,8 @@ export default function Home() {
       {/* Quotes */}
       <section className="mx-auto max-w-6xl px-4 sm:px-6 pb-16">
         <div className="mb-10">
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">What people say</h2>
-          <p className="mt-2 text-gray-600">Early testers share quick notes on how MTVNAL fits their day.</p>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Quotes</h2>
+          <p className="mt-2 text-gray-600">Timeless words that fuel clarity, focus, and daily momentum.</p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {[
