@@ -175,9 +175,9 @@ export default function Home() {
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { quote: "The only planner I have not abandoned.", name: "Ava" },
-            { quote: "Short sessions. Real progress.", name: "Marco" },
-            { quote: "Kind voice. Clear steps.", name: "Lina" },
+            { quote: "The journey of a thousand miles begins with a single step.", name: "Lao Tzu" },
+            { quote: "Knowing yourself is the beginning of all wisdom.", name: "Aristotle" },
+            { quote: "Discipline is the bridge between goals and accomplishment.", name: "Jim Rohn" },
           ].map((t, i) => (
             <Card key={i}>
               <p className="text-sm">“{t.quote}”</p>
