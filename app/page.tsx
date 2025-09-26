@@ -88,7 +88,7 @@ export default function Home() {
               <Shield className="mt-1" size={20} />
               <div>
                 <h3 className="font-semibold">Made to uplift</h3>
-                <p className="mt-1 text-sm text-gray-600">Put your vision in motion right away.</p>
+                <p className="mt-1 text-sm text-gray-600">Put your vision into motion right away.</p>
               </div>
             </div>
           </Card>
