@@ -51,7 +51,7 @@ export default function Home() {
               Build the life you can stand behind
             </h1>
             <p className="mt-4 text-lg text-gray-600 max-w-prose">
-              MTVNAL is a growth studio for people who want real change without the gimmicks. Tools that respect your agency. Content that motivates with honesty. Systems that help you move every day.
+              MTVNAL is a growth-focused studio for people who want to rise higher. We design tools that fuel daily momentum, create content that sparks ambition, and build systems that keep you moving toward the life you envision.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button className="bg-black text-white inline-flex items-center gap-2">Start free <ArrowRight size={16}/></Button>
