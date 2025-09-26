@@ -157,7 +157,7 @@ export default function Home() {
           </div>
           <Card>
             <h3 className="font-semibold">Newsletter</h3>
-            <p className="mt-1 text-sm text-gray-600">Weekly notes on momentum, mindset, and simple systems. No spam.</p>
+            <p className="mt-1 text-sm text-gray-600">Daily quotes, affirmations, and more to help you become the best you.</p>
             <form className="mt-4 flex gap-2" onSubmit={(e)=>{e.preventDefault(); alert('Connect this form to Beehiiv/ConvertKit.')}}>
               <input type="email" placeholder="you@example.com" className="w-full rounded-xl border border-gray-200 px-4 py-3 outline-none focus:ring-2 focus:ring-gray-200" />
               <Button className="bg-black text-white">Subscribe</Button>
