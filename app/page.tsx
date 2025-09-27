@@ -137,19 +137,19 @@ export default function Home() {
             <p className="mt-2 text-gray-300 max-w-prose">Templates, planners, and guided sessions that make consistency simple.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            <Card className="bg-white shadow-md rounded-xl">
+            <Card className="!bg-white shadow-md rounded-xl">
               <div className="text-sm text-black">Digital</div>
               <h3 className="mt-1 text-lg font-semibold text-black">30 day Growth Planner</h3>
               <p className="mt-1 text-sm text-black">A focused system for two quick sessions a day. Track habits, energy, and wins.</p>
               <Button className="mt-4 bg-black text-white">Preview</Button>
             </Card>
-            <Card className="bg-white shadow-md rounded-xl">
+            <Card className="!bg-white shadow-md rounded-xl">
               <div className="text-sm text-black">Guided</div>
               <h3 className="mt-1 text-lg font-semibold text-black">Evening Reset Audio</h3>
               <p className="mt-1 text-sm text-black">A five minute wind down to clear the day and set calm intention for tomorrow.</p>
               <Button className="mt-4 bg-black text-white">Listen</Button>
             </Card>
-            <Card className="bg-white shadow-md rounded-xl">
+            <<Card className="!bg-white shadow-md rounded-xl">
               <div className="text-sm text-black">Community</div>
               <h3 className="mt-1 text-lg font-semibold text-black">MTVNAL Collective</h3>
               <p className="mt-1 text-sm text-black">A friendly space to share micro wins and keep each other accountable.</p>
