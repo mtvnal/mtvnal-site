@@ -168,9 +168,9 @@ export default function Home() {
               MTVNAL exists for people who want to rise higher with clarity, focus, and tools that truly work. It is built on the belief that ambition should feel empowering, not overwhelming, and that growth is strongest when it is done with purpose.
             </p>
             <ul className="mt-6 space-y-3 text-sm text-gray-700">
-              <li className="flex items-start gap-2"><span className="mt-1">•</span> Clear copy that speaks to real goals</li>
-              <li className="flex items-start gap-2"><span className="mt-1">•</span> Clean design that feels calm and premium</li>
-              <li className="flex items-start gap-2"><span className="mt-1">•</span> Accessible pricing and generous free tier</li>
+              <li className="flex items-start gap-2"><span className="mt-1">•</span> Digital products that speak to your real goals</li>
+              <li className="flex items-start gap-2"><span className="mt-1">•</span> Affirmations meant to uplift you</li>
+              <li className="flex items-start gap-2"><span className="mt-1">•</span> Generous free tier and accessible pricing</li>
             </ul>
           </div>
           <Card>
