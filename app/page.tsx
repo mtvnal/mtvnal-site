@@ -139,8 +139,8 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="!bg-white shadow-md rounded-xl">
               <div className="text-sm text-black">Digital</div>
-              <h3 className="mt-1 text-lg font-semibold text-black">30 day Growth Planner</h3>
-              <p className="mt-1 text-sm text-black">A focused system for two quick sessions a day. Track habits, energy, and wins.</p>
+              <h3 className="mt-1 text-lg font-semibold text-black">30-Day Growth Planner</h3>
+              <p className="mt-1 text-sm text-black">A focused system, two quick sessions a day. Track habits, energy, and wins.</p>
               <Button className="mt-4 bg-black text-white">Preview</Button>
             </Card>
             <Card className="!bg-white shadow-md rounded-xl">
