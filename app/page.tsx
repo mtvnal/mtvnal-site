@@ -121,8 +121,8 @@ export default function Home() {
             <div className="flex items-start gap-3">
               <Heart className="mt-1" size={20} />
               <div>
-                <h3 className="font-semibold">Compassion driven</h3>
-                <p className="mt-1 text-sm text-gray-600">Win by growing your compassion. Growth that uplifts you and the people around you.</p>
+                <h3 className="font-semibold">Growth driven</h3>
+                <p className="mt-1 text-sm text-gray-600">Growth that uplifts you and the people around you.</p>
               </div>
             </div>
           </Card>
