@@ -1,5 +1,6 @@
 'use client';
 
+import Image from "next/image";
 import React from 'react';
 import { motion } from 'framer-motion';
 import {
@@ -80,7 +81,13 @@ export default function Home() {
 
           <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }}>
             <div className="relative">
-              <div className="aspect-[4/3] rounded-3xl bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-100 shadow-inner" />
+              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-gray-100 shadow-inner">
+  <img
+    src="/marble.jpg"
+    alt="Marble texture"
+    className="w-full h-full object-cover"
+  />
+</div>
               <div className="absolute -bottom-6 -right-6 w-40 h-40 rounded-3xl bg-white shadow-lg border border-gray-100 grid place-items-center">
                 <div className="text-center p-4">
                   <div className="text-3xl font-extrabold">30</div>
