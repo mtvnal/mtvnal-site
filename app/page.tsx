@@ -134,7 +134,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 py-16">
           <div className="mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">Tools that help you act</h2>
-            <p className="mt-2 text-gray-300 max-w-prose">Templates, planners, and guided sessions that make consistency simple.</p>
+            <p className="mt-2 text-white max-w-prose">Templates, planners, and guided sessions that make consistency simple.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="!bg-white shadow-md rounded-xl">
