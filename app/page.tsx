@@ -150,7 +150,7 @@ export default function Home() {
               <Button className="mt-4 bg-black text-white">Listen</Button>
             </Card>
             <Card className="bg-white shadow-md rounded-xl">
-              <div className="text-sm text-gray-300">Community</div>
+              <div className="text-sm text-black">Community</div>
               <h3 className="mt-1 text-lg font-semibold text-black">MTVNAL Collective</h3>
               <p className="mt-1 text-sm text-black">A friendly space to share micro wins and keep each other accountable.</p>
               <Button className="mt-4 bg-black text-white">Join waitlist</Button>
